@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.87);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin:3em;
+}
+
+#heading{
+    position:sticky;
+    top:0%;
+    padding: 15px 0px;
+    margin-left: 15px;;
+}
+
+#no-notes{
+    padding-top:50px ;
+    text-align: center;
+}
+
+#am{
+    color:rgb(113, 233, 33);
+}
+
+#new-note-title-input{
+    border-radius:5px;
+    border:2px solid rgb(113, 233, 33);
+    padding:10px;
+    width:25%;
+    outline: none;
+    margin:15px;
+}
+
+#new-note-body-input{
+    border-radius:5px;
+    border:2px solid rgb(113, 233, 33);
+    padding:10px;
+    width:25%;
+    outline: none;
+    margin:15px;
+}
+
+.btn{
+    padding:10px;
+    border-radius: 20px;
+    background-color:rgb(113, 233, 33);
+    border:2px solid rgb(113, 233, 33);
+    color:rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active{
+    border:2px solid rgb(98, 245, 1);
+    box-shadow:inset 0 0 5px #000000;
+}
+
+.hidden{
+    display:none;
+}
+
+h2,
+p {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul,li{
+    list-style: none;
+}
+
+ul{
+    overflow: hidden;
+    padding: 3em 1em;
+}
+
+ul li a{
+    display:block;
+    height:200px;
+    width:200px;
+    padding:1em;
+    text-decoration: none;
+    color: #000;
+    background:rgb(113, 233, 33);
+    box-shadow: 10px 10px 7px rgb(33, 33, 33);
+}
+
+ul li {
+    margin: 1em;
+    float: left;
+    position: relative;
+}
+
+ul li h2{
+    font-size:23px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+ul li p{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size:17px;
+}
+
+.delete{
+    float:right;
+    position: absolute;
+    top:0;
+    right: 0;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    background-color: red;
+    border:2px sdouble white;
+    font-weight: bold;
+}
+
+ul li a{
+    transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+    cursor: default;
+}
+
+ul li:nth-child(even) a{
+    transform:rotate(4deg);
+    -moz-transform: rotate(4drg);
+    position:relative;
+    top:5px;
+    background: #ff5733;
+}
+
+ul li:nth-child(3n) a {
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+    background: #77d8d8;
+}
+  
+  ul li:nth-child(5n) a {
+    transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    position: relative;
+    top: -10px;
+}
+
+ul li a:hover, ul li a:focus{
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+}
+
+ol {
+    text-align: center;
+  }
+  
+  ol li {
+    display: inline;
+    padding-right: 1em;
+  }
+  
+  ol li a {
+    color: #fff;
+  }
+
+  @media only screen and (max-width:600px){
+      body{
+          margin-top:10px;
+      }
+
+      #new-note-title-input, #new-note-body-input{
+          display:block;
+          width:90%;
+          margin-left: 0px;
+
+      }
+
+      #heading{
+          margin-left: 0px;
+      }
+
+      .btn{
+          margin-left: 120px;
+      }
+  }
+
+
